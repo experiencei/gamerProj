@@ -19,7 +19,13 @@ export class AppComponent {
   cost = 2000
   temperature = 25.3
 
-  
+  pizza = {
+    toppings: ['pepperoni', 'bacon'],
+    size: 'large'
+  }
+  blueClass = false
+  fontSize = 16
+
   getName() {
     return this.name
   }
