@@ -1,3 +1,11 @@
+<p *ngIf="blueClass">Button is blue.</p>
+
+<button (click)="blueClass = !blueClass"
+  [ngClass]="{ blue: blueClass }"
+  [ngStyle]="{ 'font-size.px': fontSize }">Change</button>
+
+<hr>
+
 <input (keyup)="changeImage($event)" [value]="imgURL">
 
 <app-post [img]="imgURL" (imgSelected)="logImg($event)">
